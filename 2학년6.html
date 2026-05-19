@@ -340,7 +340,7 @@
 
     function loadLocal() {
         try {
-            const saved = localStorage.getItem('soha_course_plan_2026');
+            const saved = localStorage.getItem('soha_course_plan_2026_2nd');
             if (!saved) return;
             const data = JSON.parse(saved);
             if (data.cls) document.getElementById("classInput").value = data.cls;
@@ -429,7 +429,7 @@
         });
 
         try {
-            localStorage.setItem('soha_course_plan_2026', JSON.stringify({
+            localStorage.setItem('soha_course_plan_2026_2nd', JSON.stringify({
                 cls, num, nm, career, sub, time
             }));
         } catch(e) {}
